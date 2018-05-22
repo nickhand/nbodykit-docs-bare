@@ -1,0 +1,14 @@
+{% extends "!layout.html" %}
+
+{% block header %}
+  {{ super() }}
+  <script>
+  $(function(){
+    $(".dropdown-menu.globaltoc").height(
+  $(window).height() - $("#navbar").height()
+  );
+  });
+  </script>
+{% endblock %}
+
+{% set css_files = css_files + ['_static/my-styles.css'] %}
