@@ -1,0 +1,5 @@
+docs/build
+docs/source/api/_autosummary
+docs/source/api/modules.rst
+docs/source/savefig
+__pycache__
