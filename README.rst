@@ -1,5 +1,18 @@
 Setting up nbodykit documentation
----------------------------------
+=================================
+
+The documentation is built using Sphinx -- general documentation can be
+found at http://www.sphinx-doc.org. The documentation is located in the
+``docs`` directory, and
+
+- the configuration is controlled by `conf.py`_; this is generally the same template file with a few modifications for specific packages.
+- the build process is controlled by `Makefile`_; this is also filled with template build commands, and we've added a few more for this package.
+- the documentation files are located in the `docs/source`_ directory and are restructured text files
+
+
+.. _conf.py: docs/source/conf.py
+.. _Makefile: docs/Makefile
+.. _docs/source: docs/source
 
 Build Instructions
 ------------------
@@ -14,6 +27,16 @@ these commands suffice::
   source activate nbodykitdocs
   make html
   open build/html/index.html
+
+This uses `environment.yml`_ to install the necessary dependencies of nbodykit
+and the dependencies necessary to build the documentation. 
+
+.. _environment.yml: docs/environment.yml 
+
+Configuration
+-------------
+
+The configuration for the build process is handled by the 
 
 Workflow for editing notebooks
 ------------------------------
